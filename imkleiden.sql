@@ -78,10 +78,6 @@ CREATE TABLE `cursussen` (
 -- Tabelstructuur voor tabel `lidworden`
 --
 
-CREATE TABLE `lidworden` (
-  `lidworden` varchar(22) CHARACTER SET utf8 DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
 -- --------------------------------------------------------
 
 --
