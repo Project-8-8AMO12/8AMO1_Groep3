@@ -38,7 +38,7 @@
                     <a class="nav-link disabled" href="#">Bijenteelt</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Contact</a>
+                    <a class="nav-link" href="contact">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#">Cursussen</a>
