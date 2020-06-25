@@ -61,7 +61,8 @@
                 </li><li class="nav-item">
                     <a class="nav-link disabled" href="#">Zwerm</a>
             </ul>
-            <button type="button" class="btn btn-success navbar-btn btn-circle">Admin-panel</button>
+
+            <a href="/beheer"><button type="button" class="btn btn-success navbar-btn btn-circle">Admin-panel</button></a>
         </div>
     </nav>
 </header>

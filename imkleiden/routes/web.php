@@ -37,10 +37,6 @@ Route::get('/bijen', function () {
     return view('bijen');
 });
 
-Route::get('/beheer', function () {
-    return view('beheer');
-});
-
 Route::get('/rooster', function () {
     return view('rooster');
 });
@@ -69,3 +65,7 @@ Route::get('/activiteiten', function () {
 Route::get('/cursussen', function () {
     return view('cursussen');
 });
+
+Auth::routes();
+
+Route::get('/beheer', 'BeheerController@index')->name('beheer');
