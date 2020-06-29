@@ -80,7 +80,7 @@
 
 
 
-<main role="main">
+<main role="main"><br><center>
     <center><h2>Onze top bijenteelt kanidaten</h2></center>
     <table class="table table-borderless">
         <thead>
@@ -104,24 +104,24 @@
         <tr>
             <th scope="row">2</th>
             <td>Mick</td>
-            <td>De Hront</td>
+            <td>Waterlandentanden</td>
         </tr>
         <tr>
             <th scope="row">2</th>
-            <td>Jason</td>
-            <td>De Hront</td>
+            <td>Jantje</td>
+            <td>De Tom</td>
         </tr>
         <tr>
             <th scope="row">2</th>
-            <td>Jason</td>
-            <td>De Hront</td>
+            <td>Bassie</td>
+            <td>De Hondengps</td>
         </tr>
         </tbody>
     </table>
+    </center>
 
 
-
-    </div><!-- /.container -->
+        </div></br><!-- /.container -->
 
 
     <!-- FOOTER -->
