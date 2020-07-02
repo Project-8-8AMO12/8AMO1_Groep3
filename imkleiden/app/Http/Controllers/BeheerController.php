@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use DB;
+
 use Illuminate\Http\Request;
+use App\Home_page;
 
 class BeheerController extends Controller
 {
@@ -23,6 +26,22 @@ class BeheerController extends Controller
      */
     public function index()
     {
-        return view('beheer');
+        $home_page = DB::table('home_pages')
+            ->get();
+
+        return view('beheer', ['home_page'=>$home_page]);
+    }
+
+    public function submit(Request $request) {
+        $this->validate($request, [
+            'header' => 'required',
+            'body' => 'required'
+        ]);
+
+        Home_page::where('id', 1)->update($request->except('_token'));
+
+
+
+        return redirect('/')->with('success', 'Home page is geupdate');
     }
 }

@@ -9,9 +9,7 @@
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something gr*/
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','WelcomeController@index');
 
 Route::get('/contact', function () {
     return view('contact');
@@ -69,3 +67,5 @@ Route::get('/cursussen', function () {
 Auth::routes();
 
 Route::get('/beheer', 'BeheerController@index')->name('beheer');
+
+Route::post('edit_page/submit', 'BeheerController@submit');
