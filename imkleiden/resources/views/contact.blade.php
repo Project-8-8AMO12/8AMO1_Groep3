@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -106,44 +108,28 @@
 
 
 
-
-
             <!-- contact form -->
-            <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
-                <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
-                    <!-- Name -->
-                    <div class="form-group label-floating">
-                        <label class="control-label" for="name">Name</label>
-                        <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
-                        <div class="help-block with-errors"></div>
-                    </div>
-                    <!-- email -->
-                    <div class="form-group label-floating">
-                        <label class="control-label" for="email">Email</label>
-                        <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
-                        <div class="help-block with-errors"></div>
-                    </div>
-                    <!-- Subject -->
-                    <div class="form-group label-floating">
-                        <label class="control-label">Onderwerp</label>
-                        <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
-                        <div class="help-block with-errors"></div>
-                    </div>
-                    <!-- Message -->
-                    <div class="form-group label-floating">
-                        <label for="message" class="control-label">Bericht</label>
-                        <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
-                        <div class="help-block with-errors"></div>
-                    </div>
-                    <!-- Form Submit -->
-                    <div class="form-submit mt-5">
+            @section('content')
+                <h1>Contact</h1>
+                {!! Form::open(['url' => 'contact/submit']) !!}
+                <div class="form-group">
+                    {{Form::label('name', 'Name')}}
+                    {{Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Enter name'])}}
+                </div>
+                <div class="form-group">
+                    {{Form::label('email', 'E-Mail Address')}}
+                    {{Form::text('email', '', ['class' => 'form-control', 'placeholder' => 'example@gmail.com'])}}
+                </div>
+                <div class="form-group">
+                    {{Form::label('message', 'Message')}}
+                    {{Form::textarea('message', '', ['class' => 'form-control', 'placeholder' => 'Enter message'])}}
+                </div>
+                <div>
+                    {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
+                </div>
+                {!! Form::close() !!}
+            @endsection
 
-                        <button type="button" class="btn btn-success">Verstuur bericht</button>
-                        <div id="msgSubmit" class="h3 text-center hidden"></div>
-                        <div class="clearfix"></div>
-                    </div>
-                </form>
-            </div>
         </div>
     </div>
 </section>
@@ -169,4 +155,5 @@
 
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text></svg></body>
 </html>
+
 
