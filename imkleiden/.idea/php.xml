@@ -84,7 +84,11 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
       <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
       <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+<<<<<<< HEAD
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+=======
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+>>>>>>> dcd7975690ca04981ce8721d617b7f51a8ecdb5f
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
